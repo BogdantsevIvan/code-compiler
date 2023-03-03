@@ -20,10 +20,21 @@ server: node index.js
 
 В проекте используется 5 состояний:
 
+```js
 //App.js
 
-const [onMouseClick, setOnMouseClick] = useState(false);
-  const [onMousePush, setOnMousePush] = useState(false);
+const [onMouseClick, setOnMouseClick] = useState(false);//Отслеживает первый клик в текущей игре
+  const [onMousePush, setOnMousePush] = useState(false);//Отслеживает удержание кнопки мышки
   const [isWin, setIsWin] = useState(false);
   const [isLoss, setIsLoss] = useState(false);
   const [restart, setRestart] = useState(false);
+
+  ```
+  
+  
+  # Основные
+
+| Name       | Type   | Output                             | 
+| ---------- | ------ | ---------------------------------- | 
+| `dateEdit` | double | [Timestamp(begin), Timestamp(end)] |
+| `dateEdit` | single | Timestamp                          |
